@@ -1,0 +1,101 @@
+﻿<Window x:Class="TVS.ClientManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TVS"
+        mc:Ignorable="d"
+        Title="Client Management" Height="575" Width="900"
+        WindowStartupLocation="CenterScreen"
+        Background="#FF244E6B" BorderBrush="#FF004CFF" Icon="assets/window_icon_ali2_XNT_icon.ico">
+
+    <Grid>
+
+        <!--Voice Server Panel-->
+        <Grid Height="50" VerticalAlignment="Top" Background="#FF1C2F3E">
+
+
+            <TextBlock Text="Voice Server Panel" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center"  Foreground="#E0FFFF"/>
+
+
+        </Grid>
+
+
+        <!--Controlpanel-->
+        <StackPanel  Width="300" Background="#14212B" Margin="0,55,0,0.4" HorizontalAlignment="Left">
+            <TextBlock Text="Client Management" FontSize="20" Margin="68,10,55,0" HorizontalAlignment="Center" Foreground="White"/>
+            <!--online-->
+            <TextBlock x:Name="Online" Text="  Online"  VerticalAlignment="Center" Width="50" Margin="30 0" Height="20" Foreground="#FF28F39F"/>
+
+            <!--Username and Password-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Username" Margin="26,10,54.4,9.6" Grid.Column="0" Grid.ColumnSpan="2" Foreground="White" FontFamily="Segoe UI Semibold"/>
+                <TextBox x:Name="Username" IsReadOnly="True" Grid.Column="1" Margin="68,10,19,9.6" Grid.ColumnSpan="3" Background="{x:Null}" BorderBrush="#FF1C2F3E" Height="19" Foreground="White"/>
+                <TextBlock Text="Password" FontWeight="Bold" Margin="26,43,54.4,-13.4" Grid.ColumnSpan="2" Foreground="White" FontFamily="Segoe UI Semibold"/>
+                <TextBox x:Name="Password" IsReadOnly="True" Margin="68,43,19,-16.4" Grid.Column="1" Grid.ColumnSpan="3" Height="19" Width="153" Background="{x:Null}" BorderBrush="#FF1C2F3E" Foreground="White"/>
+            </Grid>
+
+            <!--Client IP and Port-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="IP Address" FontWeight="Bold"  Margin="25,35,70,42.6" Grid.ColumnSpan="2" Foreground="White" FontFamily="Segoe UI Semibold"/>
+
+                <TextBlock Text="Port" FontWeight="Bold"  Margin="25,65,115,9.6" FontFamily="Segoe UI Semibold" Foreground="White" Grid.ColumnSpan="2"/>
+
+            </Grid>
+
+            <!--Traffic Control-->
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Traffic that has been received :"  FontWeight="Bold" Margin="26,0,26.8,20.2" Grid.Column="0" FontFamily="Segoe UI Semibold" Foreground="White" Grid.ColumnSpan="2"/>
+                <TextBox x:Name="TrafficAmount" IsReadOnly="True" Margin="98,24,9.6,-3.8" Width="42" Height="19" Background="{x:Null}" BorderBrush="#FF1C2F3E" Foreground="White"/>
+                <Button x:Name="RefreshTrafficAmount" Content="Refresh" Background="#FF233C4F" FontWeight="Bold" Margin="0,24,20,-4" Grid.Column="2" Click="RefreshTrafficAmount_Click" BorderBrush="{x:Null}" Foreground="White" Width="55" Height="19" VerticalAlignment="Top"/>
+
+            </Grid>
+            <!--Close-->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Close the client's socket :" Margin="26,19,54.8,0.4" Grid.ColumnSpan="2" Foreground="White" FontFamily="Segoe UI Semibold"/>
+                <TextBox x:Name="TimeOut" Margin="98,44,9.6,-24.6" Background="{x:Null}" BorderBrush="#FF1C2F3E" Foreground="White" />
+                <Button x:Name="Close" Content="Close" Background="#FF233C4F" FontWeight="Bold" Margin="1.2,44,19,-24.6" Grid.Column="2" Click="Close_Click" BorderBrush="{x:Null}" Foreground="White" Width="55" Height="19"/>
+            </Grid>
+            <Button x:Name="ReportButton" Content="Get Report" Margin="10,35" Background="#FF233C4F" BorderBrush="{x:Null}" Foreground="White" Click="ReportButton_Click"/>
+            <Image Source="assets/photo_2020-06-07_19-35-00.jpg" HorizontalAlignment="Center" Margin="-30,-30" Width="150" Height="144" Opacity="0.5" RenderTransformOrigin="0.451,0.766"/>
+
+            <!--Report-->
+
+
+
+        </StackPanel>
+        <TextBox x:Name="ClientIP" HorizontalAlignment="Left" Height="19" Margin="129,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" Background="{x:Null}" BorderBrush="#FF1C2F3E" Foreground="White"/>
+        <TextBox x:Name="ClientPort" HorizontalAlignment="Left" Height="19" Margin="129,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" Background="{x:Null}" BorderBrush="#FF1C2F3E" Foreground="White"/>
+        <TextBox x:Name="Report" IsReadOnly="True" HorizontalAlignment="Left" Height="442" Margin="327,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="533" Background="#FF244E6B" Foreground="White" BorderBrush="{x:Null}" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Width="60" Margin="327,76,0,0" TextWrapping="Wrap" Text=" Message :" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox x:Name="ServerMessage" HorizontalAlignment="Left" Height="19" Margin="387,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="440" Background="{x:Null}" Foreground="#FF05111A" BorderBrush="#FF1C2F3E" FontFamily="MV Boli"/>
+        <Button Height="25" Width="25" Margin="800,10,0,380" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click">
+            <Image Source="assets/icons8-email-send-96.png"></Image>
+        </Button>
+
+
+    </Grid>
+</Window>
