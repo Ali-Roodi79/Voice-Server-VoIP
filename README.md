@@ -9,10 +9,10 @@ What this project does is that it receives a message in the form of voice from a
 
 ## How to use:
 
-- When you run the project in Visual Studio (Both Client & Server), These 2 console screens will be displayed and you can send message to Server:
+- When you run the project, this wpf screens will be displayed:
 
 
-![image](https://github.com/Ali-Roodi79/Socket-programming-asynchronous-client-and-server/blob/main/assets/MainConsolePage.png)
+![image](https://github.com/Ali-Roodi79/Voice-Server-VoIP/blob/main/assets/img/MainPage.png)
 
 ---
 
