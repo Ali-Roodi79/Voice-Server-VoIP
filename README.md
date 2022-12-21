@@ -19,7 +19,7 @@ What this project does is that it receives a message in the form of voice from a
 - For example, we send the sentence **"Hello server"** to the server, and the server must send us exactly the same message.:
 
 
-![image](https://github.com/Ali-Roodi79/Socket-programming-asynchronous-client-and-server/blob/main/assets/Send%26ReceiveMessage.png)
+![image](https://github.com/Ali-Roodi79/Voice-Server-VoIP/blob/main/assets/img/Set-Server-IP-Port-and-binding.png)
 
 ---
 
