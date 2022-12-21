@@ -31,6 +31,7 @@ Also, in the third section, you can go to the management page of a specific clie
 
 ---
 
-- The process of sending and receiving messages is all done on the basis of **socket programming** and completely **asynchronously**.
+- On this page, the username, password, IP address, port and traffic received by our target client are displayed.
+- You can also close this client's socket and disconnect it from the server.
 
-- The messages are sent & receive using the IP address of the local host, **127.0.0.1** and port **9999**.
+> Also, on the main page, as a server, you can send a single message to all clients and also turn off the server by pressing the power button (upper right of the page).
