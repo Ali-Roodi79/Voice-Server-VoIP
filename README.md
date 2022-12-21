@@ -34,4 +34,5 @@ Also, in the third section, you can go to the management page of a specific clie
 - On this page, the username, password, IP address, port and traffic received by our target client are displayed.
 - You can also close this client's socket and disconnect it from the server.
 
-> Also, on the main page, as a server, you can send a single message to all clients and also turn off the server by pressing the power button (upper right of the page).
+> Also, on the main page, as a server, you can send a single message to all clients and also turn off the server
+>  by pressing the power button (upper right of the page).
