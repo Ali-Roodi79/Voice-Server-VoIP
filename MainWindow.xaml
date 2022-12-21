@@ -78,9 +78,9 @@
         <Grid Height="80" VerticalAlignment="Top" Background="#233C4F">
 
             <TextBlock Text="Voice Server Panel" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center"  Foreground="#E0FFFF"/>
-            <Image Source="assets/aliv2.jpg" HorizontalAlignment="Left" Margin="32,5,32,10" Width="70" Height="70"/>
+            <Image Source="assets/Icons/aliv2.jpg" HorizontalAlignment="Left" Margin="32,5,32,10" Width="70" Height="70"/>
             <Button x:Name="ServerOff" Width="40" Height="40" Background="{x:Null}" HorizontalAlignment="Right" Margin="0,0,30,0" BorderBrush="{x:Null}" Click="ServerOff_Click">
-                <Image x:Name="OffServer" Source="assets/off1.png"></Image>
+                <Image x:Name="OffServer" Source="assets/Icons/off1.png"></Image>
             </Button>
 
 
@@ -94,13 +94,13 @@
 
         <Button x:Name="RefreshClient1" Width="40" Height="40" Margin="0,648,10,0" HorizontalAlignment="Right" Background="{x:Null}" BorderBrush="{x:Null}" Click="RefreshClient1_Click">
 
-            <Image x:Name="RefreshClient" Source="assets/icons8-refresh-48.png" Width="30" Height="30"/>
+            <Image x:Name="RefreshClient" Source="assets/Icons/icons8-refresh-48.png" Width="30" Height="30"/>
 
         </Button>
         <TextBox x:Name="online_list" Text="List of online members:" IsReadOnly="True" HorizontalAlignment="Stretch" Height="577" Margin="1123,80,-0.4,0" VerticalAlignment="Top" Background="#FF1B1D29" Foreground="#FF0CE4F9" BorderBrush="{x:Null}" Opacity="0.3"/>
         <TextBox x:Name="MessageToAll" HorizontalAlignment="Left" Height="25" Margin="525,662,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="667" Background="#FF1C2F3E" BorderBrush="#FF415DBA" Foreground="#FF008BD3" FontFamily="MV Boli"/>
         <Button x:Name="SendMessageToAll" Width="40" Height="40" Margin="1150,648,0,0" Background="{x:Null}" BorderBrush="{x:Null}" Click="SendMessageToAll_Click">
-            <Image Source="assets/icons8-email-send-96.png" Width="25" Height="25"/>
+            <Image Source="assets/Icons/icons8-email-send-96.png" Width="25" Height="25"/>
         </Button>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="525,634,0,0" TextWrapping="Wrap" Text="Server Message : " VerticalAlignment="Top" Width="120" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" FontSize="14"/>
 

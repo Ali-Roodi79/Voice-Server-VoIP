@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Client Management" Height="575" Width="900"
         WindowStartupLocation="CenterScreen"
-        Background="#FF244E6B" BorderBrush="#FF004CFF" Icon="assets/window_icon_ali2_XNT_icon.ico">
+        Background="#FF244E6B" BorderBrush="#FF004CFF" Icon="assets/Icons/window_icon_ali2_XNT_icon.ico">
 
     <Grid>
 
@@ -80,7 +80,7 @@
                 <Button x:Name="Close" Content="Close" Background="#FF233C4F" FontWeight="Bold" Margin="1.2,44,19,-24.6" Grid.Column="2" Click="Close_Click" BorderBrush="{x:Null}" Foreground="White" Width="55" Height="19"/>
             </Grid>
             <Button x:Name="ReportButton" Content="Get Report" Margin="10,35" Background="#FF233C4F" BorderBrush="{x:Null}" Foreground="White" Click="ReportButton_Click"/>
-            <Image Source="assets/photo_2020-06-07_19-35-00.jpg" HorizontalAlignment="Center" Margin="-30,-30" Width="150" Height="144" Opacity="0.5" RenderTransformOrigin="0.451,0.766"/>
+            <Image Source="assets/Icons/photo_2020-06-07_19-35-00.jpg" HorizontalAlignment="Center" Margin="-30,-30" Width="150" Height="144" Opacity="0.5" RenderTransformOrigin="0.451,0.766"/>
 
             <!--Report-->
 
@@ -93,7 +93,7 @@
         <TextBlock HorizontalAlignment="Left" Width="60" Margin="327,76,0,0" TextWrapping="Wrap" Text=" Message :" VerticalAlignment="Top" Foreground="White"/>
         <TextBox x:Name="ServerMessage" HorizontalAlignment="Left" Height="19" Margin="387,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="440" Background="{x:Null}" Foreground="#FF05111A" BorderBrush="#FF1C2F3E" FontFamily="MV Boli"/>
         <Button Height="25" Width="25" Margin="800,10,0,380" Background="{x:Null}" BorderBrush="{x:Null}" Click="Button_Click">
-            <Image Source="assets/icons8-email-send-96.png"></Image>
+            <Image Source="assets/Icons/icons8-email-send-96.png"></Image>
         </Button>
 
 

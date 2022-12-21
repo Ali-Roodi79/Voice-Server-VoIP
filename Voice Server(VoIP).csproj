@@ -109,20 +109,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="assets\ali.jpg" />
-    <Resource Include="assets\ali2.jpg" />
-    <Resource Include="assets\ali2v2.jpg" />
-    <Resource Include="assets\ali2v3.1.jpg" />
-    <Resource Include="assets\ali2v3.jpg" />
-    <Resource Include="assets\aliv2.jpg" />
-    <Resource Include="assets\icons8-email-send-96.png" />
-    <Resource Include="assets\icons8-refresh-48.png" />
-    <Resource Include="assets\off1.png" />
-    <Resource Include="assets\photo_2020-06-07_19-35-00.jpg" />
-    <Resource Include="assets\window-icon-ali2.jpg" />
-    <Resource Include="assets\window_icon_ali2_XNT_icon.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="window_icon_ali2_XNT_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
