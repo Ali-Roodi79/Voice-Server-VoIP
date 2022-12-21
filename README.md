@@ -16,7 +16,8 @@ What this project does is that it receives a message in the form of voice from a
 
 ---
 
-- For example, we send the sentence **"Hello server"** to the server, and the server must send us exactly the same message.:
+- We enter the server IP in the first field and the server port in the second field and activate the server by pressing the "set" button.
+- Then we specify the number of clients that the server can respond to in the next field, and by pressing the "Start Accepting" button, the server starts accepting clients:
 
 
 ![image](https://github.com/Ali-Roodi79/Voice-Server-VoIP/blob/main/assets/img/Set-Server-IP-Port-and-binding.png)
